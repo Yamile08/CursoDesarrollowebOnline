@@ -1,0 +1,37 @@
+body {
+  background: peru;
+  font-family: sans-serif;
+}
+
+.post {
+  border: 10px solid red;
+  background: white;
+  padding: 20px;
+  text-align: center;
+  transition: .2s; /*Cuanto tiempo quiero que dure la transicion del color del blanco al azul cuando haga hover a la caja de post */
+  overflow: hidden; /*Todo lo que esta dentro de la caja y/o post se oculte*/
+}
+
+
+.post:hover {
+  background: skyblue;
+}
+
+img, p {
+  transition: .3s; /*Para que la imagen haga transicion*/
+}
+.post img {
+  transform: translateY(-300px); /*esto es para que el parrafo se mueva fuera de la caja -300px;*/
+}
+
+.post:hover img {
+  transform: scale(1.2);
+}
+
+.post p {
+  transform: translateY(100px); /*esto es para que el parrafo se mueva fuera de la caja 100px;*/
+}
+
+.post:hover p {
+  transform: translateY(0); /*Como hacer ue el parrafo entre al post despues de pasar el cursor por encima del post*/
+}

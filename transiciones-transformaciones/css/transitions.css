@@ -1,0 +1,76 @@
+/*background-color
+background-position
+background-size
+border-color
+border-width
+color
+border-radius
+font-size
+font-weight
+height width
+left right bottom top
+padding
+opacity
+*/
+body {
+  background: skyblue;
+}
+.contenedor {
+  margin: 0 auto;
+  width: 600px;
+  font-family: sans-serif;
+}
+
+.transicion {
+  transition: .3s;
+  /*transition: .3s opacity ease;*/
+/*  transition-duration: .3s;
+  transition-property: opacity;
+  transition-timing-function: ease;*/
+}
+
+.caja {
+  width: 200px;
+  height: 200px;
+  border: 1px solid red;
+}
+
+.opacity {
+  opacity: 0;
+}
+
+.opacity:hover {
+  opacity: 1; /*Donde 0 es invisible y 1 es opaco, esto funciona solo cuando el mouse pasa sobre el elemento, el elemento es invisible y cuando pasa por encima se hace visible*/
+}
+
+.fuente:hover {
+  font-size: 20px;
+  font-weight: 600; /*Cuando el Mouse pasa sobre el elemento Cambia el peso de la fuente, es decir la hace mas grande la letra*/
+}
+
+.colores:hover {
+  color: red; /*Al pasar el mouse sobre el elemento Cambia el color de la fuente y/o letra*/
+  background: yellow;  /*Al pasar el mouse sobre el elemento Cambia el color del background y/o fondo*/
+}
+
+.rotacion:hover {
+  transform: rotate(360deg);  /Hacer que el elemento haga rotacion cuando el Mouse pasa sobre el, en este caso hace una rotacion de 360 grados*/
+}
+
+.escala:hover {
+  transform: scale(2); /*hace que el elemento haga como un zoom y/o se ponga mas grande, donde 2 quiere decir 200 */
+}
+
+.sesgado:hover {
+  transform: skew(45deg); /*El elemento se inclina hacia un lado */
+}
+body {
+  perspective: 1000px;
+}
+.traslacion:hover {
+  transform: translateX(50px); */Mover el elemento cuando el mouse pase sobre el, ya sea posicion X que el elemento se coree hacia un lado, Posicion Y se mueve hacia abajo, Posicion Z Y translate3d mover el elemento hacia los tres ejes (X,Y,Z)
+}
+
+.mixtas:hover {
+  transform: rotate(45deg) scale(2) skew(45deg) translateX(50px); /*rotacion, zoom , inclinacion y translacion*/
+}

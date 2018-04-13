@@ -1,0 +1,92 @@
+body {
+  background-color: #7DD181;
+  color: #DAFFED;
+  font-family: Arial;
+  margin: 0;
+}
+
+.caja {
+  width: 200px;
+  border: 1px solid #B6F9C9;
+  margin-bottom: 50px;
+}
+
+.tipo-a {
+  margin: 0 auto;
+}
+
+.tipo-b {
+  margin-left: calc(100vw / 2 - 100px);
+}
+
+.tipo-c {
+  border: 1px solid #96E8BC;
+  padding: 10px;
+  text-align: center;
+}
+
+.tipo-c .caja {
+  display: inline-block;
+  text-align: left;
+}
+
+.relative {
+  position: relative;
+  border: 1px solid #96E8BC;
+  height: 400px;
+}
+
+.tipo-d {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.tipo-e {
+  position: absolute;
+  left: 50%;
+  margin-left: -100px; /*le resta el tamaño a el total del ancho de la caja para poderlo posicionar en el centro*/
+}
+
+.tipo-f {
+  display: flex;
+  justify-content: center;
+}
+
+.tipo-g {
+  display: table;
+  width: 100%;
+  height: 50px;
+}
+
+.tipo-g .caja {
+  display: table-cell;
+  width: 100px;
+  vertical-align: middle;
+}
+
+.height {
+    height: 500px;
+    background: #00B2B7;
+}
+
+.tipo-h {
+  box-sizing: border-box;
+  padding-top: 150px;
+}
+
+.tipo-i {
+  display: flex;
+  align-items: center;
+}
+
+.tipo-j {
+  line-height: 500px;
+  /*text-align: center;*/
+}
+
+.tipo-k > * {
+  display: inline;
+  vertical-align: middle;
+}
